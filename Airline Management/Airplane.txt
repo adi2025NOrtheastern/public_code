@@ -1,0 +1,14 @@
+SpiceJet,Spice1,M1231
+SpiceJet,Spice2,M1233
+SpiceJet,Spice3,M1235
+Lufthansa,Luf1,M12360
+Lufthansa,Luf2,M12369
+Lufthansa,Luf3,M12367
+MyAirliner,MyAir1,M12367
+MyAirliner,MyAir2,M12537
+MyAirliner,MyAir3,M12337
+MyAirliner,MyAir4,M1237
+AirIndia,AirIndia1,M1239
+AirIndia,AirIndia2,M12329
+AirIndia,AirIndia3,M1239
+AirIndia,AirIndia4,M1239

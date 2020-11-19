@@ -1,0 +1,4 @@
+SpiceJet,3,300
+Lufthansa,3,400
+MyAirliner,3,450
+AirIndia,2,700

@@ -1,0 +1,8 @@
+10,FLSP1001,Boston,LA,12/12/2020,Morning,Booked,1
+11,FLSP1001,Boston,LA,12/12/2020,Morning,Booked,2
+12,FLSP1001,Boston,LA,12/12/2020,Morning,Booked,3
+13,FLSP1001,Boston,LA,12/12/2020,Morning,Booked,1
+14,FLMY1002,India,USA,12/12/2020,Night,Cancel,1
+15,FLMY1002,India,USA,12/12/2020,Night,Booked,2
+16,FLMY1002,India,USA,12/12/2020,Night,Booked,3
+17,FLMY1002,India,USA,12/12/2020,Night,Booked,1
