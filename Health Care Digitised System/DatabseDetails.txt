@@ -1,0 +1,10 @@
+new status= occupied- not from here
+new status= assign laundry -if was occupied
+new status= available=> if assign laundry 
+
+bhos1 boston hospital head	
+bcli1, doc1, doc2, nur1, rec1(billing dept), --no--> rec2(medicasl store dept)
+pateints-> pat1, pat2
+bphar1
+bphar2
+blab1

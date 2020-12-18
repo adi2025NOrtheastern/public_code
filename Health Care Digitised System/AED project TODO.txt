@@ -1,0 +1,37 @@
+lab technician-> press of submit->wr to dr change of status to generated report
+lab technician-> press of process billing-> recpiotnist of lab wr created for billing-> done, test only for working
+
+testing-?
+pending-> validation for enterprise head multiple
+restrict doc appotmnt booking to 5 per day
+rec cancels app-> can dr still see?
+view appointmt - mark for billing status in drop down to poulate table for billing
+
+doctor role-> populate table only for non cancelled appointments
+
+username uniqueness - staff add- aditi
+hospital - pharmacy not medoical store
+Team NAme- Team SAP
+Aditi Jain - 001038953 Suhani Shah - 001567040 Prerana Urs Praveen Kumar Urs - 001553207
+jain.adit@northeastern.edu
+
+
+flow to check-> patient histry to check as aditi removed code
+
+view preseciptions-> to see all prescribed add nre panel
+prescribe medicine work request for phramacy new
+
+testing apointment status change by dr -> overriding
+appointmt complte button-> check receptionist wr
+
+pharmacy ->> prerna, suhani
+
+lab -->> receptionist
+
+
+
+Prerana - 
+
+view preseciptions-> to see all prescribed add nre panel done
+prescribe medicine work request for phramacy new  done
+doctor role-> populate table only for non cancelled appointments
