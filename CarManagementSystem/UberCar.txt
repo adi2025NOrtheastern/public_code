@@ -1,0 +1,21 @@
+Hyundai1,Hyundai,Passenger,2009,5,10000,20000,Boston,12/12/2020,A
+Hyundai2,Hyundai,Passenger,2009,5,10001,20001,Boston,12/12/2020,A
+Hyundai3,Hyundai,Transport,2009,10,10002,20002,Boston,12/12/2020,A
+Hyundai4,Hyundai,Transport,2009,10,10003,20003,Boston,12/12/2019,U
+Hyundai5,GM,Transport,2009,10,10004,20004,New York,12/12/2019,U
+Hyundai6,GM,Transport,2009,10,10005,20005,New York,12/12/2029,U
+Hyundai7,Tesla,Passenger,2009,5,10006,20006,New York,12/12/2020,A
+Hyundai8,GM,Passenger,2009,5,10007,20007,New York,12/12/2020,A
+Hyundai9,Tesla,Transport,2009,8,10008,20008,New York,12/12/2020,A
+Hyundai10,Honda,Transport,2009,4,10009,20009,New York,12/12/2019,U
+Hyundai11,GM,Transport,2009,10,10010,20010,New York,12/12/2019,U
+Hyundai12,GM,Transport,2009,10,10011,20011,New York,12/12/2029,U
+Hyundai13,GM,Transport,2010,7,10012,20012,New York,12/12/2029,U
+Hyundai14,GM,Transport,2009,10,10013,20011,Boston,12/12/2009,U
+Hyundai15,GM,Transport,2010,7,10014,20012,Boston,12/12/2029,U
+Hyundai16,Hyundai,Passenger,2009,50,10015,20011,Boston,12/12/2020,A
+Hyundai17,Hyundai,Passenger,2009,5,10016,20012,Boston,12/12/2020,A
+Hyundai18,Honda,Transport,2009,4,10017,20009,New York,12/12/2019,A
+Hyundai19,Honda,Passenger,2009,40,10018,20009,New York,12/12/2019,U
+Hyundai20,Honda,Transport,2009,4,10019,20009,Boston,12/12/2019,A
+Hyundai21,Honda,Passenger,2009,40,10020,20009,Boston,12/12/2019,U
