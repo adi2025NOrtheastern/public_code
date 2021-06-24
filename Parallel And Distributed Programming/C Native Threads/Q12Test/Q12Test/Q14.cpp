@@ -1,0 +1,28 @@
+//#include <iostream>
+//
+//using namespace std;
+//struct movies_t {
+//    string title;
+//    int year;
+//};
+//
+//
+//struct friends_t {
+//    string name;
+//    string email;
+//    movies_t favorite_movie;
+//} charlie, maria;
+//
+//int main()
+//{
+//    friends_t* pfriends = &charlie;
+//    pfriends->name = "aditi";
+//    pfriends->email = "aa@gmail.com";
+//    pfriends->favorite_movie.title = "movieTitle";
+//    pfriends->favorite_movie.year = 1990;
+//    cout << pfriends->name << endl;
+//    cout << pfriends->email << endl;
+//    cout << pfriends->favorite_movie.title << endl;
+//    cout << pfriends->favorite_movie.year << endl;
+//    return 1;
+//}

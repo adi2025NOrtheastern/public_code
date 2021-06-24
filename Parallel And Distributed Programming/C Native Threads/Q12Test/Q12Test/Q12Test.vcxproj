@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c617d866-588c-4c39-b7bc-0c59dbe823da}</ProjectGuid>
+    <RootNamespace>Q12Test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pthreadVC2.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_10.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_13.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_18.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_20.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_25.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_28.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_4.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_40.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_6.c" />
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\Northeastern\Spring 2020\CSYE7215 - parallel and distributed\lecture8\HW8\code\3_7.c" />
+    <ClCompile Include="Dpart.c" />
+    <ClCompile Include="GraderThread.cpp" />
+    <ClCompile Include="mutex.c" />
+    <ClCompile Include="MyStudent.cpp" />
+    <ClCompile Include="Q1.cpp" />
+    <ClCompile Include="Q10b.cpp" />
+    <ClCompile Include="Q12Test.c">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="Q13.c" />
+    <ClCompile Include="Q14.cpp" />
+    <ClCompile Include="Q1c.cpp" />
+    <ClCompile Include="Q2.c" />
+    <ClCompile Include="Q3a.c" />
+    <ClCompile Include="Q3b.c" />
+    <ClCompile Include="Q3QueueA.c" />
+    <ClCompile Include="Q3QueueB.c" />
+    <ClCompile Include="Q3QuickSortCPP.cpp" />
+    <ClCompile Include="Q4.cpp" />
+    <ClCompile Include="Q5.cpp" />
+    <ClCompile Include="Q5a.cpp" />
+    <ClCompile Include="Q5b.cpp" />
+    <ClCompile Include="Q5c.cpp" />
+    <ClCompile Include="Q7.cpp" />
+    <ClCompile Include="StudentThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\accctrl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\aclapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\aclui.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\adsprop.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\afxres.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\amaudio.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\amvideo.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\assert.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\audevcod.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\autosprintf.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\aviriff.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\aygshell.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\basetsd.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\basetyps.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\bdatypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\cderr.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\cguid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\cmnquery.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\comcat.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\commctrl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\commdlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\complex.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\config.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\conio.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\context.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\control.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\cpl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\cplext.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ctype.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\custcntl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\d3d9.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\d3d9caps.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\d3d9types.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dbt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dde.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ddeml.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\devguid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dhcpcsdk.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dir.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\direct.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dirent.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dlfcn.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dlgs.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\docobj.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dos.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dsadmin.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dsclient.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dsgetdc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dshow.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dsquery.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dsrole.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dvdevcod.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dvdmedia.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dxerr8.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\dxerr9.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\edevdefs.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\errno.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\errorrep.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\errors.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\evcode.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\excpt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\exdisp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\exdispid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\fcntl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\fenv.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\float.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\fltdefs.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\gdiplus.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\getopt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\gettext-po.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\glob.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\gmon.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\httpext.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\icm.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\iconv.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\idispids.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\il21dec.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\imagehlp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\imm.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\implement.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\initguid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\intshcut.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\inttypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\io.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ipexport.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\iphlpapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ipifcons.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ipinfoid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\iprtrmib.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\iptypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ipxconst.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ipxrtdef.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ipxtfflt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\isguids.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ks.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ksmedia.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\largeint.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\libcharset.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\libgen.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\libintl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\limits.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lm.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmaccess.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmalert.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmapibuf.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmat.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmaudit.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmbrowsr.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmchdev.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmconfig.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmcons.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmerrlog.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmmsg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmremutl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmrepl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmserver.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmshare.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmsname.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmstats.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmsvc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmuse.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmuseflg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lmwksta.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\localcharset.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\locale.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ltdl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\lzexpand.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\malloc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\math.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mbctype.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mbstring.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mciavi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mcx.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mem.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\memory.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mgm.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mgmtapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mlang.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mmreg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mmsystem.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mpegtype.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mprapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mq.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\msacm.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mshtml.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\msvcrtver.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\mswsock.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\nb30.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\nddeapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\need_errno.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\nspapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntdef.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntdll.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntdsapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntdsbcli.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntldap.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntsecapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ntsecpkg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\oaidl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\objbase.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\objfwd.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\objidl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\objsafe.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\objsel.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ocidl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\odbcinst.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ole.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ole2.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ole2ver.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\oleacc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\oleauto.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\olectl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\olectlid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\oledlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\oleidl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\pbt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\poppack.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\powrprof.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\process.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\profil.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\profile.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\prsht.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\psapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\pshpack1.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\pshpack2.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\pshpack4.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\pshpack8.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\pthread.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\qedit.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ras.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rasdlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\raserror.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rassapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\reason.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\regstr.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\richedit.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\richole.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\routprot.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcdce.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcdce2.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcdcep.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcndr.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcnsi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcnsip.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcnterr.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rpcproxy.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\rtutils.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\schannel.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sched.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\schnlsp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\scrnsave.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sddl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sdkddkver.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\search.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\secext.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\security.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\semaphore.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\servprov.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\setjmp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\setupapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\share.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\shellapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\shldisp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\shlguid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\shlobj.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\shlwapi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\shobjidl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\signal.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\snmp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\specstrings.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sql.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sqlext.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sqltypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sqlucode.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\sspi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\stdint.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\stdio.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\stdlib.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\stm.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\string.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\strings.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\strmif.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\subauth.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\svcguid.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\tchar.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\time.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\tlhelp32.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\tmschema.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\unistd.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\unknwn.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\userenv.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\usp10.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\utime.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\uxtheme.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\values.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\vfw.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\vidcap.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\vmr9.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\vptype.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\w32api.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wchar.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wctype.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winable.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winbase.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winber.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wincon.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wincrypt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\windef.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\windns.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\windows.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\windowsx.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winerror.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wingdi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wininet.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winioctl.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winldap.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winnetwk.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winnls.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winnt.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winperf.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winreg.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winresrc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winsnmp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winsock.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winsock2.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winspool.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winsvc.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winuser.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\winver.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ws2spi.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\ws2tcpip.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wsahelp.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wsipx.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wsnetbs.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wtsapi32.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\wtypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\xprtdefs.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\zmouse.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\_mingw.h" />
+    <ClInclude Include="..\..\..\..\..\..\MinGW\include\_winsock.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\unistd.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Java\jdk1.8.0_111\include\jni.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Java\jdk1.8.0_111\include\jni_md.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Java\jdk1.8.0_111\include\jvmti.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Java\jdk1.8.0_111\include\jvmticmlr.h" />
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\NetBeansProjects\ParallelHW8\Q12\pthread.h" />
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\NetBeansProjects\ParallelHW8\Q12\sched.h" />
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\NetBeansProjects\ParallelHW8\Q12\semaphore.h" />
+    <ClInclude Include="GraderThread.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="MyStudent.h" />
+    <ClInclude Include="StudentThread.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

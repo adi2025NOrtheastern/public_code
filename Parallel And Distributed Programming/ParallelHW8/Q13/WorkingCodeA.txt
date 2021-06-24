@@ -1,0 +1,43 @@
+//reverse.c // working code Amit
+ 
+#include <jni.h>
+#include <stdio.h>
+
+static char* threadfn(const char *rev, int size);
+ 
+JNIEXPORT jstring JNICALL Java_reverse_reversefunc
+(JNIEnv *env,jobject jobj,jstring original)
+{
+  const char *org;
+ 
+  org = (*env)->GetStringUTFChars(env,original,NULL);
+ 
+  int i;
+  int size = (*env)->GetStringUTFLength(env,original);
+   char *rev = threadfn(org, size);
+  //rev[size]='\0';
+ 
+return (*env)->NewStringUTF(env,rev);
+}
+
+static char* threadfn(const char *org, int size)
+{
+	int i;
+  char *rev ;
+  char temp;
+  rev = org;
+    printf("line 28\n");
+	printf("%s\n",org);
+	printf("%d\n",size);
+  for(i=0;i<size/2;i++){
+	  printf("line 33 %d %c\n",i, org[size-i-1]);
+	    temp = org[i];
+        rev[i]=org[size-i-1];
+		rev[size-i-1]=temp;
+		printf("line 34\n");
+  }
+  rev[size]='\0';
+ 
+   return rev;
+
+}

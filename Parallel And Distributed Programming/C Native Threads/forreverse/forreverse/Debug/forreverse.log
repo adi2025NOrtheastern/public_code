@@ -1,0 +1,14 @@
+﻿  pch.cpp
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(23,14): error C2819: type 'JNIEnv_' does not have an overloaded member 'operator ->'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\jni.h(782): message : see declaration of 'JNIEnv_'
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(23,14): message : did you intend to use '.' instead?
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(23,33): error C2232: '->JNIEnv_::GetStringUTFChars': left operand has 'struct' type, use '.'
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(26,15): error C2819: type 'JNIEnv_' does not have an overloaded member 'operator ->'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\jni.h(782): message : see declaration of 'JNIEnv_'
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(26,15): message : did you intend to use '.' instead?
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(26,35): error C2232: '->JNIEnv_::GetStringUTFLength': left operand has 'struct' type, use '.'
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(34,15): error C2819: type 'JNIEnv_' does not have an overloaded member 'operator ->'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\jni.h(782): message : see declaration of 'JNIEnv_'
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(34,15): message : did you intend to use '.' instead?
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(34,29): error C2232: '->JNIEnv_::NewStringUTF': left operand has 'struct' type, use '.'
+C:\Users\aditi\source\repos\forreverse\forreverse\pch.cpp(46,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'

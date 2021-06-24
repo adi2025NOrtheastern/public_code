@@ -1,0 +1,6 @@
+﻿  Dpart.c
+  mutex.c
+  Q12Test.c
+  Generating Code...
+C:\Users\aditi\source\repos\Q12Test\Q12Test\Q12Test.c(50): warning C4716: 'print_message_function': must return a value
+LINK : fatal error LNK1104: cannot open file 'pthreadVC2.dll'
