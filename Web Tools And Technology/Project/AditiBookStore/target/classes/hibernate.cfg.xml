@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/aditibookDB</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.show_sql">true</property>
+        <!--validate means throw error if something wrong or missing (keep this)
+        update means  read hbm file, if table/column doesnot exists it will update if not there 
+        create-drop  means at runtime it will create db and then afterwards drop
+        create-only means create
+        -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!--which pojo class map to which table of db-->
+        <!--mapping resource="Book.hbm.xml"/>
+        <mapping resource="Buyer.hbm.xml"/-->
+        
+        <mapping class="com.aditicompany.pojo.Admin"/>
+        <mapping class="com.aditicompany.pojo.Book"/>
+        <mapping class="com.aditicompany.pojo.Buyer"/>
+        <mapping class="com.aditicompany.pojo.Genre"/>
+        <mapping class="com.aditicompany.pojo.OrderDetails"/>
+        <mapping class="com.aditicompany.pojo.Orders"/>
+        <mapping class="com.aditicompany.pojo.Seller"/>
+        <mapping class="com.aditicompany.pojo.Message"/>
+        
+    </session-factory>
+</hibernate-configuration>

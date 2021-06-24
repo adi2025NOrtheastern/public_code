@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <!--bean id="propertyConfigurer"
+    class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+    p:location="/WEB-INF/jdbc.properties" />
+
+<bean id="dataSource"
+    class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+    p:driverClassName="${jdbc.driverClassName}"
+    p:url="${jdbc.url}"
+    p:username="${jdbc.username}"
+    p:password="${jdbc.password}" /-->
+
+    <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
+    
+    <!--daos-->
+    <bean name="loginDao" class="com.aditicompany.DAO.LoginDao"/>
+    <bean name="adminDao" class="com.aditicompany.DAO.AdminDao"/>
+    <bean name="genreDao" class="com.aditicompany.DAO.GenreDao"/>
+    <bean name="sellerDao" class="com.aditicompany.DAO.SellerDao"/>
+    <bean name="buyerDao" class="com.aditicompany.DAO.BuyerDao"/>
+    <bean name="bookDao" class="com.aditicompany.DAO.BookDao"/>
+    <bean name="orderDao" class="com.aditicompany.DAO.OrdersDao"/>
+    <bean name="messageDao" class="com.aditicompany.DAO.MessageDao"/>
+    <bean name="orderDetailsDao" class="com.aditicompany.DAO.OrdersDetailsDao"/>
+    
+    
+    
+    
+    <bean name="validation" class="com.aditicompany.Helper.Validation"/>
+    <bean name="adminValidator" class="com.aditicompany.Validator.AdminValidator"/>
+    <bean name="bookValidator" class="com.aditicompany.Validator.BookValidator"/>
+    <bean name="genreValidator" class="com.aditicompany.Validator.GenreValidator"/>
+    
+    
+    
+    <!---pojos-->
+    <bean name="admin" class="com.aditicompany.pojo.Admin"/>
+    <bean name="genre" class="com.aditicompany.pojo.Genre"/>
+    <bean name="seller" class="com.aditicompany.pojo.Seller"/>
+    <bean name="buyer" class="com.aditicompany.pojo.Buyer"/>
+    <bean name="book" class="com.aditicompany.pojo.Book"/>
+    <bean name="order" class="com.aditicompany.pojo.Orders"/>
+    <bean name="message" class="com.aditicompany.pojo.Message"/>
+    <bean name="orderDetails" class="com.aditicompany.pojo.OrderDetails"/>
+    
+        
+
+    
+    
+
+</beans>

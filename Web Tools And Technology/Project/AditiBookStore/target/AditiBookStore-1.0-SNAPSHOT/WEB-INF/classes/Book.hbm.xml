@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<hibernate-mapping>
+  <class name="com.aditicompany.pojo.Book" table="book">
+    <id name="bookId" column="bookId" type="int">
+      <generator class="native"/>
+    </id>
+    <property name="movieTitle" column="title" type="string"/>
+    <property name="leadActor" type="java.lang.String">
+        <column name="actor"/>
+    </property>
+    <property name="leadActress" column="actress" type="string"/>
+    <property name="genre" column="genre" type="string"/>
+    <property name="year" column="year" type="int"/>
+  </class>
+</hibernate-mapping>
