@@ -1,0 +1,11 @@
+INFO 6250 Web Development Tools and Methods
+
+Explored advanced server-side technologies and tools necessary to design and engineer complete web-based enterprise applications quickly. 
+The main focus of this class was Spring MVC and Hibernate to build server-side, database intensive, and multi-tier web applications. 
+Additionally, designed Rich Internet Applications (RIA) using AJAX, and Service-Oriented Architecture (SOA) using REST. 
+RDBMS is MySQL in this class.
+
+Objectives Achieved:
+• Designed and built web applications using Spring MVC and Hibernate
+• Learned JSTL and other Custom Tag Libraries and design web pages
+• Learned how to process web client requests Asynchronously using AJAX
