@@ -1,0 +1,8 @@
+Overview
+“Aditi Book Store” is a web platform that helps users to search and buy books from various book sellers who sell their used books. Here seller creates an account to sell and then can post their book details which they want to sell and categorize it to a genre like engineering, science, fiction, non-fiction, novels, space, history, etc. which goes into database to persist data. The buyers can find the book by category, book name, author name, ISBN. Buyer can add in a session cart, remove items from cart and place order. Also, a buyer can ask the seller to sell for a price if bargain is allowed otherwise simply buy the book. Buyers get search suggestion of books by category, book name, author name, ISBN implemented using AJAX. The seller details will be checked and approved before seller can sell books; upon approval seller receives an email. Buyers can communicate to seller, message seller.
+Buyer will receive an email confirmation for order placed and order cancel scenarios.
+Admin can see a dashboard as follows:
+1) Total no of books in each domain
+2) Total seller and their books
+3) Total Buyer in systems
+PDF reports can be downloaded for orders by buyer/seller and list of books in each genre for admin.
