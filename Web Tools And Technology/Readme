@@ -9,3 +9,11 @@ Objectives Achieved:
 • Designed and built web applications using Spring MVC and Hibernate
 • Learned JSTL and other Custom Tag Libraries and design web pages
 • Learned how to process web client requests Asynchronously using AJAX
+
+
+Project Work:
+Used Technology stack:
+Application is build using Spring MVC Framework (4.3.29.RELEASE) and Hibernate core(5.4.12.Final).
+Front End (Views): JSP/HTML/CSS using AJAX.
+Back End: Spring MVC Controllers, DAO classes and annotated POJOs (Model) for Hibernate
+Database: Relational Database – MySQL 8.0.19
